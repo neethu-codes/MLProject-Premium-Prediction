@@ -1,7 +1,29 @@
-# MLProject-Premium-Prediction
+# Health Insurance Premium Prediction
 
 ##  Project Overview  
-This project predicts health insurance premiums based on various features such as age, BMI, smoking status, and other health-related factors. The goal is to build an accurate machine-learning model that helps insurance companies estimate premiums efficiently.
+This is an interactive machine learning application that predicts an individual's annual health insurance cost based on demographic, medical, and lifestyle inputs. The goal is to build an accurate machine-learning model that helps insurance companies estimate premiums efficiently.
+
+## Features
+- Predicts the Annual Premium Amount for a health insurance plan based on user inputs.
+
+- Uses age-based model selection, with separate models and scalers for users aged ≤25 and >25 to improve accuracy.
+
+- Built using machine learning regression models trained on a health insurance dataset.
+
+- Applies custom preprocessing, including encoding of categorical features and scaling of numerical features.
+
+- Provides an interactive Streamlit UI for users to input data and receive instant predictions.
+
+- Loads pre-trained model artifacts for efficient and fast inference.
+
+- Implements modular code structure with clear separation between data preprocessing, model loading, and prediction logic.
+
+
+## Tech Stack
+- Frontend: Streamlit
+- Backend Logic: Python
+- ML Models: Scikit-learn (with joblib for model loading)
+- Deployment: Streamlit Cloud - https://mlproject-health-premium-prediction.streamlit.app/
 
 ##  Dataset Information  
 The dataset contains the following features:  
@@ -52,6 +74,9 @@ mlproject-premium-prediction/
 │ ├── scaler_young.joblib # Scaler used for subset of data
 │── requirements.txt # Dependencies
 │── README.md # Project documentation
+│── notebooks/ # Jupyter notebooks for model training
+│ ├── premium_prediction_rest_with_extra_info.ipynb # model training for age<=25
+│ ├── premium_prediction_young_with_extra_info.ipynb # model training for age>25
 ```
 ## App Preview
 Here’s a preview of the application:
