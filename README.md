@@ -18,6 +18,8 @@ This is an interactive machine learning application that predicts an individual'
 
 - Implements modular code structure with clear separation between data preprocessing, model loading, and prediction logic.
 
+## System Architecture
+<img src="image.png" alt="App Screenshot" width="700">
 
 ## Tech Stack
 - Frontend: Streamlit
